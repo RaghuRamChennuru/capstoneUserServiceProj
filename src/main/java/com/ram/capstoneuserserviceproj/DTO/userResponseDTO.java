@@ -1,6 +1,6 @@
-package com.ram.capstoneuserserviceproj.Models;
+package com.ram.capstoneuserserviceproj.DTO;
 
-import jakarta.persistence.Entity;
+import com.ram.capstoneuserserviceproj.Models.Role;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.ManyToMany;
 import lombok.Getter;
@@ -8,18 +8,12 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Entity
+
 @Getter
 @Setter
-public class User extends BaseClass
+public class userResponseDTO
 {
     private String name;
     private String emailId;
-    private String hashedPassword;
-    private boolean isVerified;
-
-    @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles;
-
-
 }
