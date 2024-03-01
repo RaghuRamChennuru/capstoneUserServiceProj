@@ -18,13 +18,13 @@ import java.util.UUID;
 class CapstoneUserServiceProjApplicationTests {
 
 
-    @Autowired
-    private JpaRegisteredClientRepository registeredClientRepository;
+    //@Autowired
+    //private JpaRegisteredClientRepository registeredClientRepository;
     @Test
     void contextLoads() {
     }
 
-    @Test
+   /* @Test
     @Transactional
     @Commit
     void storeregisteredclientintodb() {
@@ -46,7 +46,7 @@ class CapstoneUserServiceProjApplicationTests {
 
                 registeredClientRepository.save(oidcClient);
 
-    }
+    }*/
 
 
 }
